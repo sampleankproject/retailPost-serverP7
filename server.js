@@ -13,6 +13,7 @@ const connection = mongoose.connection;
 connection.once('open',()=>{
     console.log('mongoDB connection is established successfully 1')
 })
+//check
 
 const Routes1 = require('./Routes/reg_full')
 app.use('/',Routes1)
