@@ -1125,7 +1125,7 @@ RoutesReg.route('/RTvalidateTokenTwo').post((req,res)=>{
     try{                                                             
         if(token){                                                           
             let verify = jwt.verify(token,key)                                                           
-            // console.log(verify)                                                           
+            // console.log(verify)                                                            
                                                                 
             if(verify){
                 let decoded = jwt.decode(token,{complete:true});
